@@ -1,0 +1,293 @@
+html, body{
+    height: 100%; 
+    width: 100%;
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .9rem;
+    box-sizing: content-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: #ffff00;
+    text-decoration: underline;
+}
+.titre{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.affichage {
+    margin: 0px 80px;
+    border: 2px solid #c4c4c4;
+    border-top: none;
+    border-bottom: none;
+    display: grid;
+    justify-items: stretch;
+    grid-template-rows: 1fr 2.5fr;
+    row-gap: 2rem;
+    padding: 0rem 5rem;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1030px) {
+    nav{
+        justify-content: center;
+        align-items: center;
+    }
+    nav img{
+        display: none;
+    }
+    .affichage{
+        margin: 0rem;
+    }
+    #aside{
+        position: fixed;
+        top: 50px;
+        right: 0px;
+        flex-direction: column;
+    }
+    .bat1, .bat2{
+        transform: rotate(-90deg);
+    }
+    #multimedia h1{
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width: 990px){
+    #welcome{
+        padding: 0rem;
+    }
+    #contact{
+        padding: 2rem;
+    }
+    .affichage{
+        padding: 0rem;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 670px){
+    .affichage div p{
+        width: 100%;
+    }
+}
+
+
+#home {
+    font-weight: 600;
+    text-decoration: underline;
+}
+.batbat{
+    display: flex;
+    flex-direction: column;
+}
+.batbat .identite{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.identite .conteneur{
+    width: 90%;
+    border-radius: 1.5rem 1.5rem;
+    background-image: linear-gradient(to right, #c4c4c4, #b11313);
+    display: flex;
+    height: 3rem;
+    justify-content: around;
+    align-items: center;
+}
+.profil {
+    margin-left: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-size: 100% auto;
+    background-position-x: center;
+    background-position-y: 0px;
+}
+.nom{
+    margin-left: 1rem;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+nav img{
+    width: auto;
+    height: 3rem;
+    margin-right: auto;
+}
+#welcome div button, #submit{
+    background-color: transparent;
+    width: 16rem;
+    height: 4rem;
+    margin: 1rem 1.5rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #c4c4c4, #b11313 40%);
+    border: none;
+}
+#submit:hover{
+    background-image: linear-gradient(to right, #c4c4c4, #b11313 100%);
+}
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+#contact input, select, #contact p, form div label{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    font-size: medium;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+.choix{
+    width: 6rem;
+    height: 2rem;
+    border: 1px solid #ffffff;
+    background-image: linear-gradient(to right, #eddebf, #19587d 40%);
+}
+.choix:hover{
+    background-image: linear-gradient(to right, #eddebf, #19587d 100%);
+}
+.petitTitre{
+    font-size: 1.3rem;
+}
+
+#accueil{
+    background-image: url("images/Bathome1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-origin: border-box;
+}
+#accueil nav{
+    padding: 3rem 5rem;
+    display: flex;
+    column-gap: 2rem;
+    border-bottom: 2px solid #c4c4c4;
+}
+#welcome{
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 16rem;
+    visibility: visible;
+}
+#nemesis{
+    scroll-behavior: smooth;
+}
+#welcome p, .affichage p{
+    font-size: 1.5rem;
+    font-weight:  300;
+}
+#welcome button{
+    border: none;
+    background-color: transparent;
+    margin-top: 16rem;
+    background-image: linear-gradient(to right, #c4c4c4, #b11313 40%);
+}
+#welcome button:hover {
+    background-image: linear-gradient(to right, #c4c4c4, #b11313 100%);
+}
+#aside{
+    position: fixed; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    row-gap: 2rem;
+    column-gap: 2rem;
+    right: 30px; 
+    top: 16rem;
+    z-index: 1;
+}
+#accueil1{
+    grid-template-rows: 1fr 4fr;
+    padding: 0rem;
+}
+.photoGrosPlan{
+    background-image: url("images/Bathome11.png");
+    width: 100%;
+    height: 640px;
+    background-position: center;
+}
+#multimedia h1 + div{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+#mediaInfo{     
+    border-style: outset;
+    border-width: 1px;
+    border-color: #c4c4c4;
+    height: 230px;
+    width: 34rem;
+    border-radius: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: hidden;
+}
+#mediaInfo div:nth-child(2) {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: linear-gradient(135deg, #eddebf, #19587d);
+}
+#mediaInfo p{
+    font-size: small;
+    margin: .3rem;
+}
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 2rem 22rem;
+    background-image: linear-gradient(135deg, #eddebf, #19587d);
+    row-gap: 1rem;
+}
+#reception{
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+}
+#submit{
+    align-self: center;
+}
+#info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.nom p {
+    font-size: 1.2rem;
+}
